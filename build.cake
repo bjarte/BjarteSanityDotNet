@@ -142,7 +142,7 @@ Task("OctoPush")
                 }
             );
 
-            OctoCreateRelease(projectName, new CreateReleaseSettings {
+            OctoCreateRelease($"{applicationName}.{projectName}", new CreateReleaseSettings {
                 Server = octopusUrl,
                 ApiKey = octopusApiKey,
                 ReleaseNotes = $"Built with Azure DevOps: <a href=\"https://dev.azure.com/abc/xyz/_build/results?buildId={build}\">Build {build}</a>"
