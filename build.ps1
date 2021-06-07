@@ -1,5 +1,5 @@
 <#
-	PS> ./build.ps1 -target Default -build 1 -branch "main" -octopusUrl https://bjarte.octopus.app/ -octopusApiKey API-PUAKS7R0AHTVPYO2PPKBSDDUO6J6VIG -pushToOctopus $True
+	PS> ./build.ps1 -target Default -build 1 -branch "main" -octopusUrl xxx -octopusApiKey xxx -pushToOctopus $True
 
 
 
