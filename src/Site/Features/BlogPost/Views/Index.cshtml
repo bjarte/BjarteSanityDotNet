@@ -1,0 +1,19 @@
+@model SanityDotNet.Site.Features.BlogPost.ViewModels.BlogPostListViewModel
+
+@if (Model == null)
+{
+    return;
+}
+
+<h1>@Model.Title</h1>
+
+<p>We have these amazing blog posts. Take your pick!</p>
+
+<ul>
+
+    @foreach (var blogPost in Model.BlogPosts)
+    {
+        <li>@blogPost.Title (@blogPost.PublishedAt?.ToString("yyyy-MM-dd"))</li>
+    }
+
+</ul>
